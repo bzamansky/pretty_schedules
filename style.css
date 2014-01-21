@@ -12,11 +12,35 @@ html *
    font-family: Arial !important;
 }
 
+#content
+{
+	width: 100%;
+}
 
+#classes
+{
+	width: 80%;
+	float: left;
+}
+
+#enter
+{
+	width: 15%;
+	float: right;
+	margin-right: 20px;
+}
+
+.filled1 { background-color: #CC66CC}
+.filled2 { background-color: #CC9966}
+.filled3 { background-color: #5C8A2E}
+.filled4 { background-color: #6666CC}
+.filled5 { background-color: #99CC66}
+.filled6 { background-color: #66CCCC}
+.filled7 { background-color: #CC6666}
 
 .filled
 {
-	background-color: blue;
+	background-color: #CC6666;
 }
 
 h1
@@ -46,10 +70,17 @@ h6
 	margin: 20px;
 }
 
+input 
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
 table
 {
 	border-collapse:separate;
 	border-spacing:10px 10px;
+	float: left;
 }
 
 tr
@@ -59,7 +90,9 @@ tr
 
 td
 {
-	width:100px;
+	width: 100px;
+	max-width:100px;
+	max-height: 50px;
 	padding:5px;
 	margin: 20px;
 	position: relative;
@@ -71,6 +104,12 @@ td
 
 #topline > td
 {
-	background-color: #A9F5F2;
+	background-color: #9966CC;
 	font-size: 14px;
+}
+
+#topline > #times
+{
+	background-color: #fff;
+	vertical-align: top;
 }

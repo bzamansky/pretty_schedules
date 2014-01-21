@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
 	<link rel="stylesheet" href="./style.css" type="text/css">
+	 <script src="./jquery.js"></script>
+	 <script src="./script.js"></script>
 </head>
 
 <body>
@@ -10,85 +12,111 @@
 		<p>Spring 2014</p>
 	</div>
 
-	<table>
-		<tr id="topline">
-			<td id="mon">Monday</td>
-			<td id="tues">Tuesday</td>
-			<td id="wed">Wednesday</td>
-			<td id="thurs">Thursday</td>
-			<td id="fri">Friday</td>
-			<td id="sat">Saturday</td>
-			<td id="sun">Sunday</td>
-		</tr>
-		<tr id="eightAMtoeight50">
-			<td id="mon"></td>
-			<td id="tues"></td>
-			<td id="wed"></td>
-			<td id="thurs"></td>
-			<td id="fri"></td>
-			<td id="sat"></td>
-			<td id="sun"></td>
-		</tr>
-		<tr id="nine05tonine55">
-			<td id="mon" class="filled">
-				<h4>NES 1102</h4>
-				<h5>Seminar 101</h5>
-				<h6>9:05a - 9:55a</h6>
-				<h5>White Hall B14</h5>
-			</td>
-			<td id="tues" class="filled">NES 1102</td>
-			<td id="wed" class="filled">NES 1102</td>
-			<td id="thurs" class="filled">NES 1102</td>
-			<td id="fri" class="filled">NES 1102</td>
-			<td id="sat"></td>
-			<td id="sun"></td>
-		</tr>
-		<tr id="ten10to11">
-			<td id="mon"></td>
-			<td id="tues"></td>
-			<td id="wed"></td>
-			<td id="thurs"></td>
-			<td id="fri"></td>
-			<td id="sat"></td>
-			<td id="sun"></td>
-		</tr>
-		<tr id="eleven15totwelve05">
-			<td id="mon"></td>
-			<td id="tues"></td>
-			<td id="wed"></td>
-			<td id="thurs"></td>
-			<td id="fri"></td>
-			<td id="sat"></td>
-			<td id="sun"></td>
-		</tr>
-		<tr id="twelve20toone10">
-			<td id="mon"></td>
-			<td id="tues"></td>
-			<td id="wed"></td>
-			<td id="thurs"></td>
-			<td id="fri"></td>
-			<td id="sat"></td>
-			<td id="sun"></td>
-		</tr>
-		<tr id="one25totwo15">
-			<td id="mon"></td>
-			<td id="tues"></td>
-			<td id="wed"></td>
-			<td id="thurs"></td>
-			<td id="fri"></td>
-			<td id="sat"></td>
-			<td id="sun"></td>
-		</tr>
-		<tr id="two30tothree20">
-			<td id="mon"></td>
-			<td id="tues"></td>
-			<td id="wed"></td>
-			<td id="thurs"></td>
-			<td id="fri"></td>
-			<td id="sat"></td>
-			<td id="sun"></td>
-		</tr>
-	</table>
+	<div id="content">
+		<div id="classes">
+			<table>
+				<tr id="topline">
+					<td id="times"></td>
+					<td class="mon">Monday</td>
+					<td class="tues">Tuesday</td>
+					<td class="wed">Wednesday</td>
+					<td class="thurs">Thursday</td>
+					<td class="fri">Friday</td>
+					<td class="sat">Saturday</td>
+					<td class="sun">Sunday</td>
+				</tr>
+				<tr id="eightAMtoeight50">
+					<td id="times">8:00a</td>
+					<td class="mon"></td>
+					<td class="tues"></td>
+					<td class="wed"></td>
+					<td class="thurs"></td>
+					<td class="fri"></td>
+					<td class="sat"></td>
+					<td class="sun"></td>
+				</tr>
+				<tr id="nine05tonine55">
+					<td id="times">9:05a</td>
+					<td class="mon"></td>
+					<td class="tues"></td>
+					<td class="wed"></td>
+					<td class="thurs"></td>
+					<td class="fri"></td>
+					<td class="sat"></td>
+					<td class="sun"></td>
+				</tr>
+				<tr id="ten10to11">
+					<td id="times">10:10a</td>
+					<td class="mon"></td>
+					<td class="tues"></td>
+					<td class="wed"></td>
+					<td class="thurs">
+					</td>
+					<td class="fri"></td>
+					<td class="sat"></td>
+					<td class="sun"></td>
+				</tr>
+				<tr id="eleven15totwelve05">
+					<td id="times">11:15a</td>
+					<td class="mon"></td>
+					<td class="tues"></td>
+					<td class="wed"></td>
+					<td class="thurs"></td>
+					<td class="fri"></td>
+					<td class="sat"></td>
+					<td class="sun"></td>
+				</tr>
+				<tr id="twelve20toone10">
+					<td id="times">12:20p</td>
+					<td class="mon"></td>
+					<td class="tues"></td>
+					<td class="wed"></td>
+					<td class="thurs"></td>
+					<td class="fri"></td>
+					<td class="sat"></td>
+					<td class="sun"></td>
+				</tr>
+				<tr id="one25totwo15">
+					<td id="times">1:25p</td>
+					<td class="mon"></td>
+					<td class="tues"></td>
+					<td class="wed"></td>
+					<td class="thurs">
+					</td>
+					<td class="fri"></td>
+					<td class="sat"></td>
+					<td class="sun"></td>
+				</tr>
+				<tr id="two30tothree20">
+					<td id="times">2:30p</td>
+					<td class="mon"></td>
+					<td class="tues"></td>
+					<td class="wed"></td>
+					<td class="thurs"></td>
+					<td class="fri"></td>
+					<td class="sat"></td>
+					<td class="sun"></td>
+				</tr>
+			</table>
+		</div>
+		<div id="enter">
+			<h1>Enter A Class</h1>
+			<div>
+				Class Name: <input type="text" name="classname" id="classname" placeholder="CS 2800"/><br>
+				Class Section: <input type="text" name="classsec" id="classsec" placeholder="Lec 001"/><br>
+				Start Time: <input type="text" name="starttime" id="starttime" placeholder="9:05a"/><br>
+				End Time: <input type="text" name="endtime" id="endtime" placeholder="9:55a"/><br>
+				Days: <input type="text" name="days" id="days" placeholder="MWF"/><br>
+				Class Location: <input type="text" name="location" id="location" placeholder="Uris Hall G01"/>
+			</div>
+			<button id="submit">Submit</button>
+			<br/>
+			<br/>
+			<p>Acceptable entries for "Days":</p>
+			<p>MWF / TR / MTWRF / Sat / Sun </p>
+
+		</div>
+	</div>
 
 </body>
 
