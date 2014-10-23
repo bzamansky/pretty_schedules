@@ -6,7 +6,7 @@ $(document).ready(function(){
 	$('#submit').click(enterData);
 });
 
-
+/*
 function enterData(){
 	switch ($("#starttime").val()){
 		case "8:00a":
@@ -32,7 +32,7 @@ function enterData(){
 			break;
 		default:
 			addBox("#ten10to11");
-			
+
 	}
 	
 	fill++;
@@ -62,6 +62,38 @@ function addBox(row){
 		if ($("#days").val().indexOf("F") != -1) 
 			$(row+" td.fri").addClass("filled" + fill).html(makeBox());
 	}
+}
+*/
+
+function enterData(){
+
+	//do parseTime on the start time and end time to see how big to make it and where to put it
+	//do same date parsing thing to get the days
+	makeBox();
+}
+
+
+function parseTime(timeStr, dt) {
+    if (!dt) {
+        dt = new Date();
+    }
+ 
+    var time = timeStr.match(/(\d+)(?::(\d\d))?\s*(p?)/i);
+    if (!time) {
+        return NaN;
+    }
+    var hours = parseInt(time[1], 10);
+    if (hours == 12 && !time[3]) {
+        hours = 0;
+    }
+    else {
+        hours += (hours < 12 && time[3]) ? 12 : 0;
+    }
+ 
+    dt.setHours(hours);
+    dt.setMinutes(parseInt(time[2], 10) || 0);
+    dt.setSeconds(0, 0);
+    return dt;
 }
 
 function makeBox(){

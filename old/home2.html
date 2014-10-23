@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="./style.css" type="text/css">
+	 <script src="./jquery.js"></script>
+	 <script src="./script.js"></script>
+</head>
+
+<body>
+
+	<div id="heading">
+		<h1>Batya's Schedule</h1>
+		<p>Spring 2014</p>
+	</div>
+
+	<div id="content">
+		<div id="days">
+			<div class="box filled">Monday</div>
+			<div class="box filled">Tuesday</div>
+			<div class="box filled">Wednesday</div>
+			<div class="box filled">Thursday</div>
+			<div class="box filled">Friday</div>
+			<div class="box filled">Saturday</div>
+			<div class="box filled">Sunday</div>
+		</div>
+
+		<div id="classes">
+			<div id="times">
+
+			</div>
+			<div id="mon">
+				<div class="box filled1">
+					<h4>CS 2800</h4>
+					<h5>Lec 001</h5>
+					<h6>1:25p-2:15p</h6>
+					<h5>Uris Hall G01</h5>
+				</div>
+			</div>
+			<div id="tues">
+
+			</div>
+			<div id="wed">
+
+			</div>
+			<div id="thurs">
+
+			</div>
+			<div id="fri">
+
+			</div>
+			<div id="sat">
+
+			</div>
+			<div id="sun">
+
+			</div>
+
+		</div>
+
+
+		<div id="enter">
+			<h1>Enter A Class</h1>
+			<div>
+				Class Name: <input type="text" name="classname" id="classname" placeholder="CS 2800"/><br>
+				Class Section: <input type="text" name="classsec" id="classsec" placeholder="Lec 001"/><br>
+				Start Time: <input type="text" name="starttime" id="starttime" placeholder="9:05a"/><br>
+				End Time: <input type="text" name="endtime" id="endtime" placeholder="9:55a"/><br>
+				Days: <input type="text" name="days" id="days" placeholder="MWF"/><br>
+				Class Location: <input type="text" name="location" id="location" placeholder="Uris Hall G01"/>
+			</div>
+			<button id="submit">Submit</button>
+			<br/>
+			<br/>
+			<p>Acceptable entries for "Days":</p>
+			<p>MWF / TR / MTWRF / Sat / Sun </p>
+
+		</div>
+	</div>
+
+</body>
+
+</html>

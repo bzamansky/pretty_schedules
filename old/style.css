@@ -23,6 +23,18 @@ html *
 	float: left;
 }
 
+#days
+{
+	width: 80%;
+	height: 50px;
+	float: top;
+}
+
+#days > *
+{
+	float: left;
+}
+
 #enter
 {
 	width: 15%;
@@ -88,13 +100,12 @@ tr
 	height: 50px;
 }
 
-td
+td, .box
 {
 	width: 100px;
 	max-width:100px;
-	max-height: 50px;
 	padding:5px;
-	margin: 20px;
+	margin: 15px;
 	position: relative;
 	text-align: center;
 	cursor:default;
