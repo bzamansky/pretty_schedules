@@ -8,8 +8,15 @@
 
 <form id="findclass" action="" method="POST">
 	Search for a class:<br/>
-	Subject: <input type="text" name="subject"/><br/>
-	Class Level: <input type="number" min="1000" step="1000" default="1000" name="level"/><br/>
+	Term: 
+	<select name='term'>
+		<option value="SP15">SP15</option>
+		<option value="FA14">FA14</option>
+	</select><br/>
+	Subject: 
+	<input type="text" name="subject"/><br/>
+	Class Level: 
+	<input type="number" min="1000" step="1000" default="1000" name="level"/><br/>
 	<button id="submit">Submit</button>
 </form>
 
