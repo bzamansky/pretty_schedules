@@ -4,7 +4,6 @@
 	<title>Schedulizer 2.0</title>
 </head>
 <body>
-{{url}}
 
 <form id="findclass" action="" method="POST">
 	Search for a class:<br/>
@@ -19,6 +18,20 @@
 	<input type="number" min="1000" step="1000" default="1000" name="level"/><br/>
 	<button id="submit">Submit</button>
 </form>
+
+<div id="classes">
+	{% for class in classes %}
+
+	{{ class['subject'] }}
+	{{ class['catalogNbr']}}
+	<br/>
+	{{ class['description'] }}
+
+	<br/><br/>
+	
+	{% endfor %}
+	
+</div>
 
 
 </body>
